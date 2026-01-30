@@ -1,0 +1,15 @@
+# Python cache
+__pycache__/
+*.pyc
+
+# Models
+*.pkl
+
+# Data files
+*.csv
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Environment variables
+.env
