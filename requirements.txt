@@ -1,8 +1,7 @@
-streamlit==1.32.2
+streamlit
+tensorflow
 numpy
+pillow
 pandas
-scikit-learn
 matplotlib
-seaborn
-librosa
-joblib
+scikit-learn
