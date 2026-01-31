@@ -1,40 +1,114 @@
-# 🐟 Fish Species Classification Web App
+# 🐟 Fish Species Classification using Deep Learning
 
-A Deep Learning powered web application that identifies fish species from images using a **MobileNet CNN model** and an interactive **Streamlit interface**.
+A Deep Learning-based web application that classifies fish species from images using a **MobileNet Convolutional Neural Network (CNN)** and an interactive **Streamlit interface**.
+
+This project demonstrates the complete pipeline of **computer vision → model training → deployment**.
 
 ---
 
-## 📌 Project Overview
+## 📌 Project Objective
 
-This project uses **Transfer Learning** with MobileNet to perform **multi-class image classification** of fish species. The trained model is deployed using Streamlit, allowing users to upload fish images and get real-time predictions.
+The objective of this project is to build an intelligent system capable of:
+
+- Identifying fish species from images  
+- Using transfer learning with a pretrained deep learning model  
+- Providing real-time predictions through a web application  
+
+### 🌊 Real-world Applications
+
+- Marine research  
+- Fishery management  
+- Biodiversity monitoring  
+- Educational tools  
 
 ---
 
 ## 🧠 Deep Learning Model
 
-| Feature | Details |
-|--------|---------|
+| Feature | Description |
+|---------|-------------|
 | Model Type | Convolutional Neural Network (CNN) |
 | Base Model | MobileNet (Pretrained on ImageNet) |
 | Technique | Transfer Learning |
-| Input Size | 224 x 224 |
-| Output | Multi-class classification |
+| Input Size | 224 × 224 RGB images |
+| Output | Multi-class fish species classification |
 | Framework | TensorFlow / Keras |
 
----
+### 🔹 Why MobileNet?
 
-## 🚀 Application Features
-
-✅ Upload fish images  
-✅ Real-time species prediction  
-✅ Confidence score display  
-✅ Shows probabilities for all classes  
-✅ Fast and interactive UI  
+- Lightweight and efficient  
+- Optimized for image recognition  
+- High accuracy with low computational cost  
+- Ideal for web deployment  
 
 ---
 
-## 🖥️ Run Locally
+## 🚀 Web Application (Streamlit)
 
-```bash
-pip install -r requirements.txt
-streamlit run app_fcnn.py
+The trained model is deployed using **Streamlit**, providing an easy-to-use interface.
+
+### ✨ Application Features
+
+- Upload fish image  
+- Automatic preprocessing  
+- Species prediction  
+- Confidence score display  
+- Probability scores for all classes  
+- Fast and interactive UI  
+
+---
+
+## 🔄 System Workflow
+
+1. User uploads fish image  
+2. Image resized to 224×224  
+3. MobileNet preprocessing applied  
+4. Model predicts probabilities  
+5. Highest probability → predicted species  
+6. Confidence score displayed  
+
+---
+
+## 🛠️ Technologies Used
+
+- Python  
+- TensorFlow  
+- Keras  
+- Streamlit  
+- NumPy  
+- Pillow  
+
+---
+
+## 📊 Machine Learning Concepts
+
+- Convolutional Neural Networks  
+- Transfer Learning  
+- Image Preprocessing  
+- Softmax Classification  
+- Model Deployment  
+
+---
+
+## 🎯 Future Improvements
+
+- Add Grad-CAM visualization  
+- Improve dataset size and balance  
+- Add species information panel  
+- Cloud-based model storage  
+- Mobile-friendly interface  
+
+---
+
+## 👨‍💻 Author
+
+**Eashwaradhinesh K**  
+Deep Learning & Data Science Enthusiast  
+
+---
+
+## 📜 License
+
+This project is licensed under the **MIT License**.
+
+---
